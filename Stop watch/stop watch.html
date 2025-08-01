@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer Watch</title>
+  <link rel="stylesheet" href="stop watch.css">
+</head>
+<body>
+  <div class="watch-container" id="watch">
+    <!-- Roman Numerals -->
+    <div class="number"><span style="--angle: 0deg">XII</span></div>
+    <div class="number"><span style="--angle: 30deg">I</span></div>
+    <div class="number"><span style="--angle: 60deg">II</span></div>
+    <div class="number"><span style="--angle: 90deg">III</span></div>
+    <div class="number"><span style="--angle: 120deg">IV</span></div>
+    <div class="number"><span style="--angle: 150deg">V</span></div>
+    <div class="number"><span style="--angle: 180deg">VI</span></div>
+    <div class="number"><span style="--angle: 210deg">VII</span></div>
+    <div class="number"><span style="--angle: 240deg">VIII</span></div>
+    <div class="number"><span style="--angle: 270deg">IX</span></div>
+    <div class="number"><span style="--angle: 300deg">X</span></div>
+    <div class="number"><span style="--angle: 330deg">XI</span></div>
+
+    <!-- Hands -->
+    <div class="hand hour" id="hour"></div>
+    <div class="hand minute" id="minute"></div>
+    <div class="hand second" id="second"></div>
+  </div>
+
+  <div class="controls">
+    <div>
+      <button onclick="changeTime('hour')">Hour</button>
+      <button onclick="changeTime('minute')">Minute</button>
+      <button onclick="changeTime('second')">Second</button>
+    </div>
+    <div>
+      <p>Set Time: <span id="displayTime">00:00:00</span></p>
+    </div>
+    <button onclick="startTimer()">Start Timer</button>
+    <button onclick="resetTimer()">Reset</button>
+    <div class="countdown" id="countdown"></div>
+    <div class="message" id="message"></div>
+  </div>
+
+  <div class="description">
+    <p>This circular watch acts as a timer with a realistic analog design. It features Roman numerals and minute separators. The hands move with the passage of time. Set your desired time and get alerted when it’s up!</p>
+  </div>
+
+  <script src="stop watch.js"></script>
+</body>
+</html>
