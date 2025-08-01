@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nilesh Kumar Web Development Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <label class="theme-toggle">
+    <input type="checkbox" onclick="toggleTheme()" />
+    <span class="slider">
+      <span class="icon">🌞</span>
+    </span>
+  </label>
+
+  <section class="intro">
+    <div class="profile-pic-container">
+      <img src="./IMAGE-projects/my pic.jpg" alt="My Photo" />
+    </div>
+    <h1>Mr. Nilesh Kumar</h1>
+    <p>Web Development Learner | Frontend Enthusiast </p>
+  </section>
+
+  <!-- Basic Projects -->
+  <section class="section">
+    <h2>🔰 Basic Projects</h2>
+    <div class="projects">
+
+      
+      <a class="card" href="./Stop watch/stopwatch.html">
+        <img src="./IMAGE-projects/stop watch.jpg" alt="Stop Watch" />
+        <div class="card-content">
+          <h3>Stop Watch</h3>
+          <p>Basic stop watch using vanilla JavaScript.</p>
+        </div>
+      </a>
+      <a class="card" href="./calculator/calculator.html">
+        <img src="./IMAGE-projects/calculator.jpg" alt="Calculator" />
+        <div class="card-content">
+          <h3>Calculator</h3>
+          <p>Basic calculator using HTML and CSS.</p>
+        </div>
+      </a>
+      
+      <a class="card" href="./amazon/new_anazone.html">
+        <img src="./IMAGE-projects/amazonclone.jpg" alt="Amazon clone" />
+        <div class="card-content">
+          <h3>Clones</h3>
+          <p>Amazon clone</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Intermediate Projects -->
+  <section class="section">
+    <h2>🚀 Intermediate Projects</h2>
+    <div class="projects">
+      <a class="card" href="https://github.com/Mr-NILESH-KUMAR">
+        <img src="./IMAGE-projects/projectII.jpg" alt="..." />
+        <div class="card-content">
+          <h3>Upcoming...</h3>
+          <p></p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Advanced Projects -->
+  <section class="section">
+    <h2>💡 Advanced Projects</h2>
+    <div class="projects">
+      <a class="card" href="https://github.com/Mr-NILESH-KUMAR">
+        <img src="./IMAGE-projects/projectIII.jpg" alt="..." />
+        <div class="card-content">
+          <h3>Upcoming...</h3>
+          <p></p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      body.classList.toggle("dark");
+      const icon = document.querySelector(".slider .icon");
+      icon.textContent = body.classList.contains("dark") ? "🌙" : "🌞";
+    }
+  </script>
+
+</body>
+</html>
